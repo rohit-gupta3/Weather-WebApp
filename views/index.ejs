@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Weather App</title>
-</head>
-<body>
-    <form action="/" method="POST">
-        City :
-        <input type="text" name="cityName" id="city">
-        <input type="submit"> 
-    </form>
+<%- include("./partials/header") %>
 
-    <div>
-        <h1>The temperature of <%= city %> is <%= temperature %></h1>
-        <h1><%= description %></h1>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <form action="/" method="POST">
+                <input type="text" name="cityName" id="city" placeholder="Enter city">
+        
+                <input type="submit" id="button"> 
+            </form>
+        </div>
+        <div class="weather-info">
+            <h2 id="cityName">City Name: <%= city %> </h2>
+            <div class="weather-details">
+                <p id="temperature">Temperature: <%= temperature %></p>
+                <p id="weatherCondition">Weather Condition: <%= description %></p>
+            </div>
+        </div>
     </div>
+    
 </body>
 </html>
