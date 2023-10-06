@@ -4,9 +4,11 @@
 
 
 1. Install the dependency 
--npm init -y
--npm i express ejs nodemon body-parser dotenv
-
+<!-- Code block-->
+```bash
+- npm init -y
+- npm i express ejs nodemon body-parser dotenv
+```
 2. Creat a API Key in https://openweathermap.org/api
 - Refer the images in the assets/image/web1 and follow on.
 
